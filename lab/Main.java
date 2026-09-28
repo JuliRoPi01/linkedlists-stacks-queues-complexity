@@ -271,9 +271,9 @@ public class Main {
                 MyQueue<Integer> queue = new MyQueueArray<>(1);
                 for(int i = 0; i < n; i++) queue.enqueue(r.nextInt());
                 return new Metodo[] {
-                    new Metodo("Push",    () -> queue.enqueue(r.nextInt())),
-                    new Metodo("Pop",     () -> queue.dequeue()),
-                    new Metodo("Peek",    () -> queue.front()),
+                    new Metodo("Enqueue",    () -> queue.enqueue(r.nextInt())),
+                    new Metodo("Dequeue",     () -> queue.dequeue()),
+                    new Metodo("Front",    () -> queue.front()),
                     new Metodo("IsEmpty", () -> queue.isEmpty()),
                     new Metodo("Size",    () -> queue.size())
                 };
